@@ -1,0 +1,43 @@
+{
+    "schemaNamespace" : "LaunchListAPI",
+    "input" : {
+        "operationSearchPaths" : [
+            "**/*.graphql"
+        ],
+        "schemaSearchPaths" : [
+            "**/*.graphqls"
+        ]
+    },
+    "output" : {
+        "testMocks" : {
+            "none" : {
+            }
+        },
+        "schemaTypes" : {
+            "path" : "./LaunchListAPI",
+            "moduleType" : {
+                "swiftPackageManager" : {
+                }
+            }
+        },
+        "operations" : {
+            "inSchemaModule" : {
+            }
+        }
+    },
+    "schemaDownload": {
+        "downloadMethod": {
+            "introspection": {
+                "endpointURL": "https://apollo-fullstack-tutorial.herokuapp.com/graphql",
+                "httpMethod": {
+                    "POST": {}
+                },
+                "includeDeprecatedInputValues": false,
+                "outputFormat": "SDL"
+            }
+        },
+        "downloadTimeout": 60,
+        "headers": [],
+        "outputPath": "./GrapthQLTutorial/GraphQL/schema.graphqls"
+    }
+}

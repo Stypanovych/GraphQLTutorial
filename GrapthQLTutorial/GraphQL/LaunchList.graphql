@@ -1,0 +1,18 @@
+query LaunchList {
+    launches {
+        launches {
+            id
+            site
+            mission {
+                name
+                missionPatch(size: SMALL)
+            }
+            rocket {
+                id
+                name
+                type
+            }
+            isBooked
+        }
+    }
+}
